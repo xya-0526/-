@@ -25,8 +25,8 @@ export default function () { console.log('默认导出'); }
 
 #### 导入模块成员
 
-```
-js复制编辑// b.js
+```js
+
 import { name, greet } from './a.js'; // 解构式导入
 import defaultFn from './a.js';       // 默认导入
 ```
@@ -65,7 +65,7 @@ import defaultFn from './a.js';       // 默认导入
 4. **动态加载模块（懒加载）**
 
    ```
-   js复制编辑// 在需要时动态加载某个模块
+   // 在需要时动态加载某个模块
    import('./module.js').then(module => {
      module.doSomething();
    });
